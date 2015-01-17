@@ -1,0 +1,13 @@
+.container {
+  width:1024px;
+  margin:0 auto;
+  margin-top:10px;
+  margin-bottom:100px;
+}
+
+.row {
+  margin-bottom:30px;
+  width:100%;
+  overflow:auto;
+  @extend .light-shadow;
+}

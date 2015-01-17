@@ -1,0 +1,41 @@
+$red: #b4292e;
+$yellow: #f5cb29;
+$black: #000000;
+$white: #FFFFFF;
+$light-grey: #b3b3b3;
+
+$fb-blue: #445897;
+$rss-orange: #cc8f32;
+$twitter-blue: #6a8dc7;
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro|Raleway:400,900|Roboto:300,400);
+$body-font: 'Roboto', sans-serif;
+$header-font: 'Raleway', sans-serif;
+
+$body-bg: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/bg.jpg'),;
+$picgrid-left-half:  url('../images/sk8er-4.png');
+$picgrid-right-half: url('../images/sk8er-3.png');
+$picgrid-left-full: url('../images/sk8er-1.png');
+$picgrid-right-full: url('../images/sk8er-2.png');
+
+
+
+//@extend .light-shadow for bottom border of all boxes
+.light-shadow {
+  -webkit-box-shadow: 0px 5px 0px 0px rgba(179,177,179,0.6);
+  -moz-box-shadow: 0px 5px 0px 0px rgba(179,177,179,0.6);
+  box-shadow: 0px 5px 0px 0px rgba(179,177,179,0.6);
+}
+//@extend .shadow-border
+.shadow-border {
+  border-bottom:6px solid rgba(255, 255, 255, 0.4);
+}
+
+//@extend .picgrid-name
+.picgrid-name {
+  position:absolute;
+  bottom:30%;
+  font-size:44px;
+  line-height:40px;
+  color:$white;
+}

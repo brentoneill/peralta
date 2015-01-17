@@ -1,0 +1,208 @@
+/////////////////////////////
+//Image Slider Row///////////
+.slider {
+  @extend .light-shadow;
+  width:100%;
+  margin-bottom:30px;
+}
+.slider-wrapper {
+  border:solid 10px $white;
+  background-image: url('../images/top-image.png');
+  background-position:center;
+  background-attachment:fixed; //Makes a cool parallax effect!
+  background-size:cover;
+  height:338px;
+  img {
+    margin-top:60px;;
+    margin-left:20px;
+  }
+}
+/////////////////////////////
+/////////////////////////////
+
+
+
+
+/////////////////////////////
+//Three Column Articles//////
+.three-col {
+  overflow:auto;
+  width:100%;
+  display:flex;
+  margin-bottom:30px;
+}
+
+.three-col > article {
+  float:left;
+  flex:1;
+  width:32%;
+  margin-right:2%;
+  background-color:$white;
+  display:inline-block;
+  @extend .shadow-border;
+}
+
+.three-col article:last-child {
+  margin-right:0;
+}
+.article-wrapper {
+  padding:30px;
+  padding-bottom:20px;
+}
+.article-title {
+  font-size:24px;
+  margin-bottom:14px;
+  min-height:90px;
+}
+.date {
+  color:$light-grey;
+  font-size:11px;
+  margin-bottom:14px;
+}
+.article-content {
+  font-size: 12px;
+  line-height:20px;
+  margin-bottom:20px;
+  min-height:180px;
+}
+a.article-link {
+  color:$red;
+  text-transform:uppercase;
+  font-family:$header-font;
+  font-size:13px;
+  font-weight:900;
+  &:hover {
+    opacity:.7;
+  }
+}
+.article-link-wrapper {
+  text-align:center;
+  padding-bottom:20px;
+}
+/////////////////////////////
+/////////////////////////////
+
+
+
+
+/////////////////////////////
+//Pic Grid///////////////////
+.picgrid {
+  overflow:auto;
+  box-shadow:none;
+  .left-col, .right-col {
+    float:left;
+    display:inline-block;
+    min-height:464px;
+  }
+  .left-col {
+    width:66%;
+    margin-right:2%;
+    .top-row {
+      overflow:auto;
+      width:100%;
+      margin-bottom:6px;
+    }
+    .left-half-col, .right-half-col {
+      display:inline-block;
+      float:left;
+      width:48.5%;
+      @extend .shadow-border;
+    }
+    .left-half-col {
+      margin-right:3%;
+      .img-wrapper {
+        background: $picgrid-left-half;
+        background-position: right center;
+        h2 {
+          @extend .picgrid-name;
+          &:hover {
+            color:$red;
+          }
+        }
+      }
+    }
+    .right-half-col {
+      margin-right:0;
+      .img-wrapper {
+        background: $picgrid-right-half;
+        h2 {
+          @extend .picgrid-name;
+          &:hover {
+            color:$red;
+          }
+        }
+      }
+    }
+    .bottom-row {
+      .full-col {
+        width:100%;
+        @extend .shadow-border;
+        .img-wrapper {
+          background: $picgrid-left-full;
+          background-position: left center;
+          text-align:center;
+          h2 {
+            @extend .picgrid-name;
+            bottom:40%;
+            &:hover {
+              color:$red;
+            }
+          }
+        }
+      }
+    }
+  }
+////RIGHT SIDE OF PIC GRID///
+  .right-col {
+    width:32%;
+    @extend .shadow-border;
+    .full-col-wrapper {
+      color:$white;
+      background: $picgrid-right-full;
+      background-position:75% 50%;
+      background-size:cover;
+      height:464px;
+      border:6px solid $white;
+      position:relative;
+      text-align:center;
+      h2 {
+        position:absolute;
+        bottom:40%;
+        font-size:44px;
+        line-height:40px;
+        &:hover {
+          color:$red;
+        }
+      }
+    }
+  }
+}
+.picgrid .img-wrapper {
+  border:6px solid $white;
+  height:220px;
+  position:relative;
+  text-align:center;
+}
+/////////////////////////////
+/////////////////////////////
+
+
+
+
+/////////////////////////////
+//Skateboard Deck Row////////
+.skateboard-decks {
+  background-color:$white;
+  text-align:center;
+  a:hover {
+    opacity:.7;
+  }
+  img {
+    padding:20px;
+    padding-left:16px;
+    padding-right:16px;
+  }
+}
+/////////////////////////////
+/////////////////////////////

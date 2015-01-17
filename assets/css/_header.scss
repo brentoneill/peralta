@@ -1,0 +1,86 @@
+//Top part of nav-bar, social buttons and subscribe links //
+.social-bar {
+  width:100%;
+  margin-bottom:30px;
+  overflow:auto;
+  color:white;
+}
+
+.social-buttons {
+  float:right;
+  a {
+    text-align:center;
+    color:white;
+    display:inline-block;
+    width:60px;
+    height:60px;
+    margin-right:8px;
+    border-bottom:6px solid rgba(255, 255, 255, .6);
+    &:hover {
+      border-bottom-color:rgba(255, 255, 255, 1);
+    }
+  }
+  a:last-child {
+    margin-right:0px;
+  }
+  a:hover > i {
+    opacity:1;
+  }
+  .fa {
+    padding-top:16px;
+    opacity:.6;
+  }
+  .facebook {
+    background-color:$fb-blue;
+  }
+  .rss {
+    background-color:$rss-orange;
+  }
+  .twitter {
+    background-color:$twitter-blue;
+  }
+  .youtube {
+    background-color:$red;
+  }
+}
+
+
+
+nav {
+  width:100%;
+  margin-bottom:30px;
+  ul {
+    width:100%;
+    li {
+      display:inline-block;
+      width:22.75%;
+      margin-right:3%;
+      text-align:center;
+      background-color:$red;
+      color:$white;
+      @extend .light-shadow;
+      padding-top:8px;
+      padding-bottom:8px;
+    }
+    li:last-child {
+      margin-right:0;
+    }
+    a {
+      text-transform:uppercase;
+      padding:6px;
+      overflow:auto;
+      color:$white;
+      transition:color .5s ease-in-out;
+      &:hover {
+        color:$yellow;
+      }
+      i {
+        margin-right:12px;
+      }
+      i:last-child {
+        margin-right:0;
+        margin-left:12px;
+      }
+    }
+  }
+}

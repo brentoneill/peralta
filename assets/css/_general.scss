@@ -1,0 +1,21 @@
+body {
+  font-family: $body-font;
+  background:$body-bg;
+  background-size:cover;
+  min-height:2254px; //Remove when site is finished
+}
+
+h1, h2, h3 {
+  font-family: $header-font;
+  text-transform:uppercase;
+}
+
+//Changes what happens when you select text. Neat little effect!
+::selection {
+  background: $red;
+  color:$white;
+}
+::-moz-selection {
+  background: $red;
+  color:$white;
+}
