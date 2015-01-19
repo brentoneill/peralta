@@ -8,13 +8,28 @@
 .slider-wrapper {
   border:solid 10px $white;
   background-image: url('../images/top-image.png');
-  background-position:center;
-  background-attachment:fixed; //Makes a cool parallax effect!
+  background-position:50% 0%;
   background-size:cover;
   height:338px;
   img {
     margin-top:60px;;
     margin-left:20px;
+  }
+}
+.logo {
+  //Add responsive code...
+}
+.slider-nav-wrapper {
+  margin: 0 auto;
+  .slider-button {
+    width:16px;
+    height:16px;
+    background-color:$white;
+    @extend .shadow-border;
+    margin-right:8px;
+  }
+  .slider-button:last-child {
+    margin-right:0;
   }
 }
 /////////////////////////////
@@ -37,8 +52,10 @@
   flex:1;
   width:32%;
   margin-right:2%;
-  background-color:$white;
   display:inline-block;
+}
+
+.three-col article {
   @extend .shadow-border;
 }
 
@@ -46,26 +63,30 @@
   margin-right:0;
 }
 .article-wrapper {
-  padding:30px;
-  padding-bottom:20px;
+  position:relative;
 }
-.article-title {
+.post-content-wrapper {
+  padding:30px;
+  background-color:$white;
+}
+
+.post-title {
   font-size:24px;
   margin-bottom:14px;
   min-height:90px;
 }
-.date {
+.post-date {
   color:$light-grey;
   font-size:11px;
   margin-bottom:14px;
 }
-.article-content {
+.post-content {
   font-size: 12px;
   line-height:20px;
   margin-bottom:20px;
   min-height:180px;
 }
-a.article-link {
+a.post-link {
   color:$red;
   text-transform:uppercase;
   font-family:$header-font;
@@ -75,14 +96,44 @@ a.article-link {
     opacity:.7;
   }
 }
-.article-link-wrapper {
+.post-link-wrapper {
   text-align:center;
-  padding-bottom:20px;
+  position:absolute;
+  bottom:20px;
+  margin:auto;
+  width:100%;
 }
 /////////////////////////////
 /////////////////////////////
 
 
+/////////////////////////////
+////Red Arrow - used cssarrowplease.com to generate
+/////////////////////////////
+.arrow_box-container {
+  position:absolute;
+  left:-20px;
+}
+
+.arrow_box {
+  position: relative;
+  background: $red;
+  @extend .light-shadow;
+}
+.arrow_box:after {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-left-color: $red;
+  border-width: 40px;
+  margin-top: -40px;
+}
 
 
 /////////////////////////////
@@ -143,6 +194,7 @@ a.article-link {
           background-position: left center;
           text-align:center;
           h2 {
+            display:inline;
             @extend .picgrid-name;
             bottom:40%;
             &:hover {
@@ -203,6 +255,9 @@ a.article-link {
     padding-left:16px;
     padding-right:16px;
   }
+}
+.top-skateboard-decks, .bot-skateboard-decks {
+  display:inline-block;
 }
 /////////////////////////////
 /////////////////////////////

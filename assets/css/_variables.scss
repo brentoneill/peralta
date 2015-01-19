@@ -8,8 +8,9 @@ $fb-blue: #445897;
 $rss-orange: #cc8f32;
 $twitter-blue: #6a8dc7;
 
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro|Raleway:400,900|Roboto:300,400);
-$body-font: 'Roboto', sans-serif;
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,900);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+$body-font: 'Lato', sans-serif;
 $header-font: 'Raleway', sans-serif;
 
 $body-bg: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/bg.jpg'),;
@@ -28,7 +29,7 @@ $picgrid-right-full: url('../images/sk8er-2.png');
 }
 //@extend .shadow-border
 .shadow-border {
-  border-bottom:6px solid rgba(255, 255, 255, 0.4);
+  border-bottom:6px solid rgba(255, 255, 255, 0.3);
 }
 
 //@extend .picgrid-name

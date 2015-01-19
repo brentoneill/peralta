@@ -1,0 +1,305 @@
+///////////////////////////////////////
+//Media Queries for Responsive CSS ////
+//4 Breakpoints - Large (>1024px)  ////
+//                Medium (<1024px) ////
+//                Small (<768px)   ////
+//                X-Small (<480px) ////
+//               XX-Small (<320px) ////
+///////////////////////////////////////
+.hidden-s {
+  display:none;
+}
+
+
+
+///////////////////////////////////////
+/////////  Medium < 1024px  ///////////
+@media only screen and (max-width:1024px) {
+  //Standard layout
+  .container {
+    width:90%;
+  }
+  .social-buttons a {
+    width:40px;
+    height:40px;
+  }
+  .social-buttons .fa {
+    padding-top:6px;
+  }
+  nav ul a i {
+    margin-right:6px;
+  }
+  nav ul a i:last-child {
+    margin-left:6px;
+  }
+  .slider-wrapper img.logo {
+    margin-top:90px;
+    width:308px;
+    height:178px;
+  }
+  .skateboard-decks img {
+    padding-left:0;
+    padding-right:0;
+  }
+
+  .skateboard-decks a {
+    margin-right:10%;
+  }
+  .top-skateboard-decks a:last-child, .bot-skateboard-decks a:last-child {
+    margin-right:0;
+  }
+  .top-skateboard-decks, .bot-skateboard-decks {
+    width:90%;
+    margin:0 auto;
+  }
+  .picgrid .right-col .full-col-wrapper h2,
+  .picgrid .left-col .bottom-row .full-col .img-wrapper h2,
+  .picgrid .left-col .left-half-col .img-wrapper h2,
+  .picgrid .left-col .right-half-col .img-wrapper h2 {
+    font-size:34px;
+  }
+
+  .post-content-wrapper {
+    min-height:460px;
+  }
+  .post-title {
+    font-size:18px;
+  }
+}
+///////////////////////////////////////
+///////////////////////////////////////
+
+
+////////////////Resize Menu////////////
+@media only screen and (max-width:980px) {
+  .social-buttons a.subscribe {
+    font-size:14px;
+  }
+  nav {
+    ul {
+      a{
+        font-size:13px;
+      }
+      li {
+        padding-top:8px;
+        padding-bottom:8px;
+        width:23.5%;
+        margin-right:2%;
+      }
+    }
+  }
+}
+///////////////////////////////////////
+
+
+///////////////////////////////////////
+///////// SMALL < 768 /////////////////
+@media only screen and (max-width:768px) {
+  .row, nav, .social-bar {
+    margin-bottom:20px;
+  }
+  .social-bar {
+    display:none;
+  }
+  header nav {
+    background-color:$red;
+    margin-left:auto;
+    margin-right:auto;
+    -webkit-box-shadow: 0px 5px 0px 0px rgba(179,177,179,0.6);
+    -moz-box-shadow: 0px 5px 0px 0px rgba(179,177,179,0.6);
+    box-shadow: 0px 5px 0px 0px rgba(179,177,179,0.6);
+    ul {
+      text-align:center;
+      li {
+        display:block;
+        box-shadow:none;
+        width:100%;
+      }
+    }
+  }
+  .hidden-s {
+    display:block;
+  }
+  .slider-wrapper img.logo {
+    display:none;
+  }
+  header img.logo {
+    width:160px;
+    height:auto;
+    margin:0 auto;
+    margin-bottom:20px;
+  }
+  .slider-wrapper {
+    height:160px;
+  }
+  .post-content-wrapper {
+    min-height:140px;
+  }
+  .slider {
+    margin-bottom:20px;
+  }
+  .three-col {
+    display:block;
+    margin-bottom:20px;
+  }
+  .three-col article:first-child {
+    width:100%;
+    margin-right:0%;
+    display:block;
+    float:none;
+    margin-bottom:20px;
+    h4.post-title {
+      min-height:30px;
+    }
+    .post-content {
+      min-height:80px;
+    }
+  }
+  .three-col article {
+    width:49%;
+    margin-right:2%;
+  }
+  .three-col article:last-child {
+    margin-right:0;
+  }
+
+  .picgrid .right-col,
+  .picgrid .left-col {
+    float:none;
+    display:block;
+    width:100%;
+    min-height:0;
+  }
+  .picgrid .left-col .left-half-col, .picgrid .left-col .right-half-col {
+    width:49%;
+  }
+  .picgrid .left-col .left-half-col {
+    margin-right:2%;
+  }
+  .picgrid .right-col .full-col-wrapper {
+    height:220px;
+  }
+  .left-col .bottom-row .full-col,
+  .picgrid .left-col .top-row,
+  .picgrid .left-col .bot-row {
+    margin-bottom:20px;
+  }
+  .picgrid .left-col .bottom-row .full-col .img-wrapper h2 {
+    bottom:30%;
+  }
+  .picgrid .right-col .full-col-wrapper h2,
+  .picgrid .left-col .bottom-row .full-col .img-wrapper h2 {
+    position:static;
+    margin-top:100px;
+    display:block;
+  }
+  .picgrid .right-col .full-col-wrapper h2,
+  .picgrid .left-col .bottom-row .full-col .img-wrapper h2,
+  .picgrid .left-col .left-half-col .img-wrapper h2,
+  .picgrid .left-col .right-half-col .img-wrapper h2 {
+    font-size:44px;
+  }
+}
+
+///////////////////////////////////////
+///////////////////////////////////////
+@media only screen and (max-width:690px){
+  .three-col article {
+    margin-right:0;
+    width:100%;
+    display:block;
+    margin-bottom:20px;
+  }
+  .post-title, .post-content {
+    min-height:0;
+  }
+  .skateboard-decks a {
+    margin-right:7.5%
+  }
+  .skate-deck {
+    height:200px;
+    width:auto;
+  }
+}
+
+
+@media only screen and (max-width:620px){
+  .picgrid .right-col .full-col-wrapper h2,
+  .picgrid .left-col .bottom-row .full-col .img-wrapper h2,
+  .picgrid .left-col .left-half-col .img-wrapper h2,
+  .picgrid .left-col .right-half-col .img-wrapper h2 {
+    font-size:34px;
+  }
+  .contact-info, .contact-form {
+    width:100%;
+    display:block;
+  }
+  .contact-info-wrapper {
+    margin-right:0;
+  }
+  .social-buttons {
+    margin-bottom:20px;
+  }
+}
+
+///////////////////////////////////////
+///////// XSMALL < 480  ///////////////
+@media only screen and (max-width:480px) {
+  .skate-deck {
+    height:160px;
+    width:auto;
+  }
+  .skateboard-decks a {
+    margin-right:2.5%;
+  }
+  .picgrid .left-col .left-half-col,
+  .picgrid .left-col .right-half-col {
+    width:100%;
+    margin-right:0;
+    display:block;
+    margin-bottom:20px;
+  }
+  .picgrid .left-col .top-row {
+    margin:0;
+  }
+  .picgrid .right-col .full-col-wrapper,
+  .picgrid .left-col .bottom-row .full-col .img-wrapper,
+  .picgrid .left-col .left-half-col .img-wrapper ,
+  .picgrid .left-col .right-half-col .img-wrapper {
+    height:160px;
+  }
+  .picgrid .right-col .full-col-wrapper h2,
+  .picgrid .left-col .bottom-row .full-col .img-wrapper h2 {
+    margin-top:60px;
+  }
+  .picgrid .left-col .left-half-col .img-wrapper h2,
+  .picgrid .left-col .right-half-col .img-wrapper h2 {
+    position:static;
+    margin-top:60px;
+  }
+}
+///////////////////////////////////////
+///////////////////////////////////////
+
+
+
+
+///////////////////////////////////////
+/////////   XX-SMALL <320  ////////////
+@media only screen and (max-width:320px) {
+  .skate-deck {
+    height:100px;
+    width:auto;
+  }
+  .skateboard-decks a {
+    margin-right:5%;
+  }
+  .picgrid .right-col .full-col-wrapper h2,
+  .picgrid .left-col .bottom-row .full-col .img-wrapper h2,
+  .picgrid .left-col .left-half-col .img-wrapper h2,
+  .picgrid .left-col .right-half-col .img-wrapper h2 {
+    font-size:28px;
+  }
+}
+///////////////////////////////////////
+///////////////////////////////////////

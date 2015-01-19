@@ -2,7 +2,7 @@ body {
   font-family: $body-font;
   background:$body-bg;
   background-size:cover;
-  min-height:2254px; //Remove when site is finished
+  overflow-x:hidden;
 }
 
 h1, h2, h3 {
