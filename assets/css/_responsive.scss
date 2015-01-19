@@ -10,7 +10,23 @@
   display:none;
 }
 
-
+@media only screen and (max-width:1610px) {
+  .arrow_box-container {
+    position:absolute;
+    left:20px;
+  }
+}
+@media only screen and (max-width:1520px) {
+  .arrow_box-container {
+    position:absolute;
+    left:4px;
+  }
+}
+@media only screen and (max-width:1450px) {
+  .arrow_box-container {
+    display:none;
+  }
+}
 
 ///////////////////////////////////////
 /////////  Medium < 1024px  ///////////
@@ -33,9 +49,8 @@
     margin-left:6px;
   }
   .slider-wrapper img.logo {
-    margin-top:90px;
     width:308px;
-    height:178px;
+    height:auto;
   }
   .skateboard-decks img {
     padding-left:0;
@@ -129,7 +144,7 @@
     margin:0 auto;
     margin-bottom:20px;
   }
-  .slider-wrapper {
+  .slider-wrapper, .slider-overlay {
     height:160px;
   }
   .post-content-wrapper {

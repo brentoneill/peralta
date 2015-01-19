@@ -6,18 +6,25 @@
   margin-bottom:30px;
 }
 .slider-wrapper {
+  position:relative;
   border:solid 10px $white;
-  background-image: url('../images/top-image.png');
+  background-image: $slider-img1;
   background-position:50% 0%;
   background-size:cover;
   height:338px;
-  img {
-    margin-top:60px;;
-    margin-left:20px;
+  .logo{
+    position:absolute;
+    top:60px;
+    left:20px;
   }
 }
-.logo:hover {
+.slider-overlay {
+  background-image:$slider-overlay;
+  opacity:.3;
+  height:338px;
 }
+
+
 .slider-nav-wrapper {
   margin: 0 auto;
   text-align:center;
@@ -29,7 +36,7 @@
     height:16px;
     border-radius:16px;
     background-color:$white;
-    margin-right:8px;
+    margin-right:12px;
     @extend .button-shadow;
     .fa-circle {
       font-size:10px;
@@ -131,7 +138,16 @@ a.post-link {
 .arrow_box {
   position: relative;
   background: $red;
-  @extend .light-shadow;
+  padding:29px;
+  padding-right:0px;
+  padding-left:6px;
+  color:$white;
+  -webkit-box-shadow: 0px 5px 0px 0px rgba(179,177,179,0.4);
+  -moz-box-shadow: 0px 5px 0px 0px rgba(179,177,179,0.4);
+  box-shadow: 0px 5px 0px 0px rgba(179,177,179,0.4);
+  h2 {
+    font-size:18px
+  }
 }
 .arrow_box:after {
   left: 100%;
@@ -147,7 +163,8 @@ a.post-link {
   border-width: 40px;
   margin-top: -40px;
 }
-
+/////////////////////////////
+/////////////////////////////
 
 /////////////////////////////
 //Pic Grid///////////////////

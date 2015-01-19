@@ -20,7 +20,7 @@ a {
   color: inherit;
   transition: color .3s ease-in-out; }
 
-.light-shadow, .row, nav ul li, .slider, .arrow_box {
+.light-shadow, .row, nav ul li, .slider {
   -webkit-box-shadow: 0px 5px 0px 0px rgba(179, 177, 179, 0.6);
   -moz-box-shadow: 0px 5px 0px 0px rgba(179, 177, 179, 0.6);
   box-shadow: 0px 5px 0px 0px rgba(179, 177, 179, 0.6); }
@@ -150,14 +150,21 @@ nav {
   margin-bottom: 30px; }
 
 .slider-wrapper {
+  position: relative;
   border: solid 10px #FFFFFF;
   background-image: url("../images/top-image.png");
   background-position: 50% 0%;
   background-size: cover;
   height: 338px; }
-  .slider-wrapper img {
-    margin-top: 60px;
-    margin-left: 20px; }
+  .slider-wrapper .logo {
+    position: absolute;
+    top: 60px;
+    left: 20px; }
+
+.slider-overlay {
+  background-image: url("../images/grid.png");
+  opacity: .3;
+  height: 338px; }
 
 .slider-nav-wrapper {
   margin: 0 auto;
@@ -170,7 +177,7 @@ nav {
     height: 16px;
     border-radius: 16px;
     background-color: #FFFFFF;
-    margin-right: 8px; }
+    margin-right: 12px; }
     .slider-nav-wrapper .slider-button .fa-circle {
       font-size: 10px;
       color: #b4292e;
@@ -242,7 +249,16 @@ a.post-link {
 
 .arrow_box {
   position: relative;
-  background: #b4292e; }
+  background: #b4292e;
+  padding: 29px;
+  padding-right: 0px;
+  padding-left: 6px;
+  color: #FFFFFF;
+  -webkit-box-shadow: 0px 5px 0px 0px rgba(179, 177, 179, 0.4);
+  -moz-box-shadow: 0px 5px 0px 0px rgba(179, 177, 179, 0.4);
+  box-shadow: 0px 5px 0px 0px rgba(179, 177, 179, 0.4); }
+  .arrow_box h2 {
+    font-size: 18px; }
 
 .arrow_box:after {
   left: 100%;
@@ -427,6 +443,17 @@ a.post-link {
 .hidden-s {
   display: none; }
 
+@media only screen and (max-width: 1610px) {
+  .arrow_box-container {
+    position: absolute;
+    left: 20px; } }
+@media only screen and (max-width: 1520px) {
+  .arrow_box-container {
+    position: absolute;
+    left: 4px; } }
+@media only screen and (max-width: 1450px) {
+  .arrow_box-container {
+    display: none; } }
 @media only screen and (max-width: 1024px) {
   .container {
     width: 90%; }
@@ -445,9 +472,8 @@ a.post-link {
     margin-left: 6px; }
 
   .slider-wrapper img.logo {
-    margin-top: 90px;
     width: 308px;
-    height: 178px; }
+    height: auto; }
 
   .skateboard-decks img {
     padding-left: 0;
@@ -518,7 +544,7 @@ a.post-link {
     margin: 0 auto;
     margin-bottom: 20px; }
 
-  .slider-wrapper {
+  .slider-wrapper, .slider-overlay {
     height: 160px; }
 
   .post-content-wrapper {
