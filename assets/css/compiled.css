@@ -279,8 +279,9 @@ a.post-link {
         background-position: left center;
         text-align: center; }
         .picgrid .left-col .bottom-row .full-col .img-wrapper h2 {
-          display: inline;
-          bottom: 40%; }
+          display: block;
+          position: relative;
+          margin-top: 160px; }
           .picgrid .left-col .bottom-row .full-col .img-wrapper h2:hover {
             color: #b4292e; }
   .picgrid .right-col {
