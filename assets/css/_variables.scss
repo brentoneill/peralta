@@ -27,6 +27,11 @@ $picgrid-right-full: url('../images/sk8er-2.png');
   -moz-box-shadow: 0px 5px 0px 0px rgba(179,177,179,0.6);
   box-shadow: 0px 5px 0px 0px rgba(179,177,179,0.6);
 }
+.button-shadow {
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(179,177,179,0.6);
+  -moz-box-shadow: 0px 3px 0px 0px rgba(179,177,179,0.6);
+  box-shadow: 0px 3px 0px 0px rgba(179,177,179,0.6);
+}
 //@extend .shadow-border
 .shadow-border {
   border-bottom:6px solid rgba(255, 255, 255, 0.3);

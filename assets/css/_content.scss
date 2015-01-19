@@ -16,17 +16,30 @@
     margin-left:20px;
   }
 }
-.logo {
-  //Add responsive code...
+.logo:hover {
 }
 .slider-nav-wrapper {
   margin: 0 auto;
+  text-align:center;
+  width:20%;
+  margin-bottom:30px;
   .slider-button {
+    display:inline-block;
     width:16px;
     height:16px;
+    border-radius:16px;
     background-color:$white;
-    @extend .shadow-border;
     margin-right:8px;
+    @extend .button-shadow;
+    .fa-circle {
+      font-size:10px;
+      color:$red;
+      padding-bottom:6px;
+      vertical-align:middle;
+    }
+  }
+  .slider-button:first-child {
+    margin-left:auto;
   }
   .slider-button:last-child {
     margin-right:0;
@@ -112,7 +125,7 @@ a.post-link {
 /////////////////////////////
 .arrow_box-container {
   position:absolute;
-  left:-20px;
+  left:60px;
 }
 
 .arrow_box {
