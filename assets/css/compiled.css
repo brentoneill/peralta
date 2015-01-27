@@ -52,13 +52,13 @@ a {
   overflow: auto; }
 
 body {
-  font-family: "Lato", sans-serif;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/bg.jpg");
+  font-family: 'Lato', sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/bg.jpg');
   background-size: cover;
   overflow-x: hidden; }
 
 h1, h2, h3 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-transform: uppercase; }
 
 ::selection {
@@ -152,7 +152,7 @@ nav {
 .slider-wrapper {
   position: relative;
   border: solid 10px #FFFFFF;
-  background-image: url("../images/top-image.png");
+  background-image: url('../images/top-image.png');
   background-position: 50% 0%;
   background-size: cover;
   height: 338px; }
@@ -162,7 +162,7 @@ nav {
     left: 20px; }
 
 .slider-overlay {
-  background-image: url("../images/grid.png");
+  background-image: url('../images/grid.png');
   opacity: .3;
   height: 338px; }
 
@@ -230,7 +230,7 @@ nav {
 a.post-link {
   color: #b4292e;
   text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 13px;
   font-weight: 900; }
   a.post-link:hover {
@@ -295,20 +295,20 @@ a.post-link {
     .picgrid .left-col .left-half-col {
       margin-right: 3%; }
       .picgrid .left-col .left-half-col .img-wrapper {
-        background: url("../images/sk8er-4.png");
+        background: url('../images/sk8er-4.png');
         background-position: right center; }
         .picgrid .left-col .left-half-col .img-wrapper h2:hover {
           color: #b4292e; }
     .picgrid .left-col .right-half-col {
       margin-right: 0; }
       .picgrid .left-col .right-half-col .img-wrapper {
-        background: url("../images/sk8er-3.png"); }
+        background: url('../images/sk8er-3.png'); }
         .picgrid .left-col .right-half-col .img-wrapper h2:hover {
           color: #b4292e; }
     .picgrid .left-col .bottom-row .full-col {
       width: 100%; }
       .picgrid .left-col .bottom-row .full-col .img-wrapper {
-        background: url("../images/sk8er-1.png");
+        background: url('../images/sk8er-1.png');
         background-position: left center;
         text-align: center; }
         .picgrid .left-col .bottom-row .full-col .img-wrapper h2 {
@@ -321,7 +321,7 @@ a.post-link {
     width: 32%; }
     .picgrid .right-col .full-col-wrapper {
       color: #FFFFFF;
-      background: url("../images/sk8er-2.png");
+      background: url('../images/sk8er-2.png');
       background-position: 75% 50%;
       background-size: cover;
       height: 464px;
@@ -378,7 +378,7 @@ a.post-link {
     font-size: 12px;
     line-height: 24px; }
   .contact-info-wrapper h3 {
-    font-family: "Lato", sans-serif;
+    font-family: 'Lato', sans-serif;
     margin-bottom: 24px;
     text-transform: none; }
   .contact-info-wrapper .social-buttons {
@@ -447,63 +447,51 @@ a.post-link {
   .arrow_box-container {
     position: absolute;
     left: 20px; } }
+
 @media only screen and (max-width: 1520px) {
   .arrow_box-container {
     position: absolute;
     left: 4px; } }
+
 @media only screen and (max-width: 1450px) {
   .arrow_box-container {
     display: none; } }
+
 @media only screen and (max-width: 1024px) {
   .container {
     width: 90%; }
-
   .social-buttons a {
     width: 40px;
     height: 40px; }
-
   .social-buttons .fa {
     padding-top: 6px; }
-
   nav ul a i {
     margin-right: 6px; }
-
   nav ul a i:last-child {
     margin-left: 6px; }
-
   .slider-wrapper img.logo {
     width: 308px;
     height: auto; }
-
   .skateboard-decks img {
     padding-left: 0;
     padding-right: 0; }
-
   .skateboard-decks a {
     margin-right: 10%; }
-
   .top-skateboard-decks a:last-child, .bot-skateboard-decks a:last-child {
     margin-right: 0; }
-
   .top-skateboard-decks, .bot-skateboard-decks {
     width: 90%;
     margin: 0 auto; }
-
-  .picgrid .right-col .full-col-wrapper h2,
-  .picgrid .left-col .bottom-row .full-col .img-wrapper h2,
-  .picgrid .left-col .left-half-col .img-wrapper h2,
-  .picgrid .left-col .right-half-col .img-wrapper h2 {
+  .picgrid .right-col .full-col-wrapper h2, .picgrid .left-col .bottom-row .full-col .img-wrapper h2, .picgrid .left-col .left-half-col .img-wrapper h2, .picgrid .left-col .right-half-col .img-wrapper h2 {
     font-size: 34px; }
-
   .post-content-wrapper {
     min-height: 460px; }
-
   .post-title {
     font-size: 18px; } }
+
 @media only screen and (max-width: 980px) {
   .social-buttons a.subscribe {
     font-size: 14px; }
-
   nav ul a {
     font-size: 13px; }
   nav ul li {
@@ -511,13 +499,12 @@ a.post-link {
     padding-bottom: 8px;
     width: 23.5%;
     margin-right: 2%; } }
+
 @media only screen and (max-width: 768px) {
   .row, nav, .social-bar {
     margin-bottom: 20px; }
-
   .social-bar {
     display: none; }
-
   header nav {
     background-color: #b4292e;
     margin-left: auto;
@@ -531,32 +518,24 @@ a.post-link {
         display: block;
         box-shadow: none;
         width: 100%; }
-
   .hidden-s {
     display: block; }
-
   .slider-wrapper img.logo {
     display: none; }
-
   header img.logo {
     width: 160px;
     height: auto;
     margin: 0 auto;
     margin-bottom: 20px; }
-
   .slider-wrapper, .slider-overlay {
     height: 160px; }
-
   .post-content-wrapper {
     min-height: 140px; }
-
   .slider {
     margin-bottom: 20px; }
-
   .three-col {
     display: block;
     margin-bottom: 20px; }
-
   .three-col article:first-child {
     width: 100%;
     margin-right: 0%;
@@ -567,133 +546,92 @@ a.post-link {
       min-height: 30px; }
     .three-col article:first-child .post-content {
       min-height: 80px; }
-
   .three-col article {
     width: 49%;
     margin-right: 2%; }
-
   .three-col article:last-child {
     margin-right: 0; }
-
-  .picgrid .right-col,
-  .picgrid .left-col {
+  .picgrid .right-col, .picgrid .left-col {
     float: none;
     display: block;
     width: 100%;
     min-height: 0; }
-
   .picgrid .left-col .left-half-col, .picgrid .left-col .right-half-col {
     width: 49%; }
-
   .picgrid .left-col .left-half-col {
     margin-right: 2%; }
-
   .picgrid .right-col .full-col-wrapper {
     height: 220px; }
-
-  .left-col .bottom-row .full-col,
-  .picgrid .left-col .top-row,
-  .picgrid .left-col .bot-row {
+  .left-col .bottom-row .full-col, .picgrid .left-col .top-row, .picgrid .left-col .bot-row {
     margin-bottom: 20px; }
-
   .picgrid .left-col .bottom-row .full-col .img-wrapper h2 {
     bottom: 30%; }
-
-  .picgrid .right-col .full-col-wrapper h2,
-  .picgrid .left-col .bottom-row .full-col .img-wrapper h2 {
+  .picgrid .right-col .full-col-wrapper h2, .picgrid .left-col .bottom-row .full-col .img-wrapper h2 {
     position: static;
     margin-top: 100px;
     display: block; }
-
-  .picgrid .right-col .full-col-wrapper h2,
-  .picgrid .left-col .bottom-row .full-col .img-wrapper h2,
-  .picgrid .left-col .left-half-col .img-wrapper h2,
-  .picgrid .left-col .right-half-col .img-wrapper h2 {
+  .picgrid .right-col .full-col-wrapper h2, .picgrid .left-col .bottom-row .full-col .img-wrapper h2, .picgrid .left-col .left-half-col .img-wrapper h2, .picgrid .left-col .right-half-col .img-wrapper h2 {
     font-size: 44px; } }
+
 @media only screen and (max-width: 690px) {
   .three-col article {
     margin-right: 0;
     width: 100%;
     display: block;
     margin-bottom: 20px; }
-
   .post-title, .post-content {
     min-height: 0; }
-
   .skateboard-decks a {
     margin-right: 7.5%; }
-
   .skate-deck {
     height: 200px;
     width: auto; } }
-@media only screen and (max-width: 620px) {
-  .picgrid .right-col .full-col-wrapper h2,
-  .picgrid .left-col .bottom-row .full-col .img-wrapper h2,
-  .picgrid .left-col .left-half-col .img-wrapper h2,
-  .picgrid .left-col .right-half-col .img-wrapper h2 {
-    font-size: 34px; }
 
+@media only screen and (max-width: 620px) {
+  .picgrid .right-col .full-col-wrapper h2, .picgrid .left-col .bottom-row .full-col .img-wrapper h2, .picgrid .left-col .left-half-col .img-wrapper h2, .picgrid .left-col .right-half-col .img-wrapper h2 {
+    font-size: 34px; }
   .contact-info, .contact-form {
     width: 100%;
     display: block; }
-
   .contact-info-wrapper {
     margin-right: 0; }
-
   .social-buttons {
     margin-bottom: 20px; } }
+
 @media only screen and (max-width: 480px) {
   .slider-nav-wrapper {
     display: none; }
-
   .skate-deck {
     height: 160px;
     width: auto; }
-
   .skateboard-decks a {
     margin-right: 2.5%; }
-
-  .picgrid .left-col .left-half-col,
-  .picgrid .left-col .right-half-col {
+  .picgrid .left-col .left-half-col, .picgrid .left-col .right-half-col {
     width: 100%;
     margin-right: 0;
     display: block;
     margin-bottom: 20px; }
-
   .picgrid .left-col .top-row {
     margin: 0; }
-
-  .picgrid .right-col .full-col-wrapper,
-  .picgrid .left-col .bottom-row .full-col .img-wrapper,
-  .picgrid .left-col .left-half-col .img-wrapper,
-  .picgrid .left-col .right-half-col .img-wrapper {
+  .picgrid .right-col .full-col-wrapper, .picgrid .left-col .bottom-row .full-col .img-wrapper, .picgrid .left-col .left-half-col .img-wrapper, .picgrid .left-col .right-half-col .img-wrapper {
     height: 160px; }
-
-  .picgrid .right-col .full-col-wrapper h2,
-  .picgrid .left-col .bottom-row .full-col .img-wrapper h2 {
+  .picgrid .right-col .full-col-wrapper h2, .picgrid .left-col .bottom-row .full-col .img-wrapper h2 {
     margin-top: 60px; }
-
-  .picgrid .left-col .left-half-col .img-wrapper h2,
-  .picgrid .left-col .right-half-col .img-wrapper h2 {
+  .picgrid .left-col .left-half-col .img-wrapper h2, .picgrid .left-col .right-half-col .img-wrapper h2 {
     position: static;
     margin-top: 60px; } }
+
 @media only screen and (max-width: 320px) {
   .skate-deck {
     height: 100px;
     width: auto; }
-
   .skateboard-decks a {
     margin-right: 5%; }
-
-  .picgrid .right-col .full-col-wrapper h2,
-  .picgrid .left-col .bottom-row .full-col .img-wrapper h2,
-  .picgrid .left-col .left-half-col .img-wrapper h2,
-  .picgrid .left-col .right-half-col .img-wrapper h2 {
+  .picgrid .right-col .full-col-wrapper h2, .picgrid .left-col .bottom-row .full-col .img-wrapper h2, .picgrid .left-col .left-half-col .img-wrapper h2, .picgrid .left-col .right-half-col .img-wrapper h2 {
     font-size: 28px; } }
+
 .grow {
   transition: all .2s ease-in-out; }
 
 .grow:hover {
   transform: scale(1.1); }
-
-/*# sourceMappingURL=compiled.css.map */
